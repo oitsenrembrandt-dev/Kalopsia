@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalopsia • Joyería</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- INSTRUCCIÓN IMPORTANTE (LOGO): Reemplaza el src con el link de tu logo si deseas -->
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img id="brand-logo" src="https://image2url.com/images/1759179784947-72bf896a-75c6-46ef-9366-9306b72efb8a.png" alt="Logo Kalopsia" />
+        <div>
+          <h1>Kalopsia</h1>
+          <p class="muted">Joyería colombiana</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- BOTONES RÁPIDOS -->
+      <div class="quick-actions">
+        <a class="btn whatsapp" href="https://wa.me/573004278544" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn nequi" href="#" target="_blank" rel="noopener">Pagar con Nequi</a>
+        <a class="btn daviplata" href="#" target="_blank" rel="noopener">Pagar con Daviplata</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner container">
+        <h2 id="hero-title">Kalopsia — Calidad y diseño hecho en Colombia</h2>
+        <p class="lead">Kalopsia es una empresa Colombiana desde 2025 que se caracteriza por la calidad de sus materiales y productos inspirados en diversas marcas pero conservando su naturalidad.</p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn">Ver Catálogo</a>
+          <a href="#contacto" class="btn ghost">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="container section">
+      <h3 class="section-title">Catálogo - Selección Kalopsia</h3>
+      <p class="muted">Encuentra aquí nuestros productos destacados, listos para ti.</p>
+
+      <div class="grid">
+        <!-- Producto 1 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_zj4SkEYP_1757819510985_raw.jpg" alt="Anillo Aurora">
+          <h4>Anillo Aurora</h4>
+          <p class="descr">Anillo delicado con texturizado.</p>
+          <div class="meta">
+            <span class="price">$75.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Anillo Aurora')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Anillo Aurora')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Anillo Aurora')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_8S4-9Mgn_1757819940781_raw.jpg">
+          <h4>Collar Bruma</h4>
+          <p class="descr">Cadena fina con colgante minimalista.</p>
+          <div class="meta">
+            <span class="price">$82.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Collar Bruma')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Collar Bruma')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Collar Bruma')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_WZ6gV40K_1757820038902_raw.jpg" alt="Aretes Lirio">
+          <h4>Aretes Lirio</h4>
+          <p class="descr">Aretes colgantes con baño sutil.</p>
+          <div class="meta">
+            <span class="price">$95.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Aretes Lirio')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Aretes Lirio')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Aretes Lirio')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_neDu5GfM_1757820131014_raw.jpg" alt="Pulsera Sol">
+          <h4>Pulsera Sol</h4>
+          <p class="descr">Pulsera ajustable con charms elegantes.</p>
+          <div class="meta">
+            <span class="price">$89.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Pulsera Sol')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Pulsera Sol')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Pulsera Sol')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_B2fgZBdO_1757820247818_raw.jpg" alt="Anillo Cumbre">
+          <h4>Anillo Cumbre</h4>
+          <p class="descr">Anillo robusto con textura contemporánea.</p>
+          <div class="meta">
+            <span class="price">$70.500 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Anillo Cumbre')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Anillo Cumbre')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Anillo Cumbre')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_PsCHPd6-_1757820306816_raw.jpg" alt="Gargantilla Nube">
+          <h4>Gargantilla Nube</h4>
+          <p class="descr">Gargantilla minimalista con diseño para layering.</p>
+          <div class="meta">
+            <span class="price">$99.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Gargantilla Nube')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Gargantilla Nube')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Gargantilla Nube')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_BY3R_Eb4_1757820456901_raw.jpg" alt="Cadena Cubana">
+          <h4>Cadena Cubana</h4>
+          <p class="descr">Cadena unisex ideal para estilos modernos y casuales.</p>
+          <div class="meta">
+            <span class="price">$88.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Cadena Cubana')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Cadena Cubana')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Cadena Cubana')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="card">
+          <img src="https://cdn.openart.ai/uploads/image_usPYRXdl_1757820651055_raw.jpg" alt="Pulsera Caballero">
+          <h4>Pulsera Caballero</h4>
+          <p class="descr">Pulsera con relieve y acabado elegante.</p>
+          <div class="meta">
+            <span class="price">$79.000 COP</span>
+            <div class="actions">
+              <button class="btn sm nequi-inline" onclick="pagarNequi('Pulsera Caballero')">Nequi</button>
+              <button class="btn sm daviplata-inline" onclick="pagarDaviplata('Pulsera Caballero')">Daviplata</button>
+              <button class="btn sm" onclick="pedirWhatsapp('Pulsera Caballero')">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="container section">
+      <h3 class="section-title">Nuestra historia</h3>
+      <p>Kalopsia es una empresa Colombiana desde el año 2025 la cual se caracteriza por la calidad de sus materiales y productos inspirados en diversas marcas pero conservando su naturalidad que es lo que hace que nuestra empresa sea única en el mercado.</p>
+      <ul class="values">
+        <li>Calidad en cada detalle</li>
+        <li>Diseño contemporáneo</li>
+        <li>Atención personalizada</li>
+      </ul>
+    </section>
+
+    <!-- Horarios -->
+    <section id="horarios" class="container section">
+      <h3 class="section-title">Horarios</h3>
+      <p><strong>7:00 AM — 10:00 PM</strong> (Todos los días)</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container section">
+      <h3 class="section-title">Contacto</h3>
+      <p>Pedir por WhatsApp: <a class="btn whatsapp-inline" href="https://wa.me/573004278544" target="_blank" rel="noopener">Abrir WhatsApp</a></p>
+      <p>Pagar con Nequi: <a class="btn nequi-inline" href="#" target="_blank" rel="noopener">Abrir Nequi</a></p>
+      <p>Pagar con Daviplata: <a class="btn daviplata-inline" href="#" target="_blank" rel="noopener">Abrir Daviplata</a></p>
+      <p>Correo: <a href="mailto:kalopsia2025@gmail.com">kalopsia2025@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Kalopsia. Hecho en Colombia.</small>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a class="whatsapp-fab" href="https://wa.me/573004278544" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">💬</a>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
